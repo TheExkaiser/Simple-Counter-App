@@ -1,76 +1,22 @@
 <html>
 
 <head>
+
 	<title> Simple Counter App </title>
-	<style>
-	*
-	{
-		font-family: verdana, sans-serif;
-	}
-	
-	#title
-	{
-		font-size: 36;
-		text-align: center;
-		margin-top: 50px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-	#container
-	{
-		width: 250px;
-		background-color:#7ce7ff;
-		text-align: center;
-		margin-top: 20px;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 20px;
-		color: white;
-		font-size: 48;
-		font-weight: bold;
-		border-radius: 30px;
-	}
-	
-	input
-	{
-		background-color: #f2f2f2;
-		border: none;
-		border-radius: 10px;
-		margin: 5px;
-		padding: 10px;
-		font-size: 22;
-	}
-	
-	input:hover
-	{
-		background-color: #dfdfdf;
-	}
-	
-	input:active, input:focus {
-		outline: 0;
-		border: none;
-		-moz-outline-style: none;
-}
-	</style>
+	<link rel="stylesheet" href="styles.css">
+	<script src="myScript.js"></script>
+
 </head>
 
 <body>
+
 	<div id="title"> Simple Counter App </div>
+
 	<div id="container">    
-		<div id="counter">0</div> <input id="myButton" type="button" value="Add 1" onclick="myFunc(1)"><input id="myButton" type="button" value="Add 2" onclick="myFunc(2)">
-	</div>    
+
+		<div id="counter">0</div> 
+		<input type="button" value="Add 1" onclick="myFunc(1)"><input type="button" value="Add 2" onclick="myFunc(2)">
 	
-    <script type="text/javascript">
-		var i = 0;
-		var pressNum = 0;
-		function myFunc(a){
-			i+=a;
-			pressNum++;
-			document.getElementById("counter").innerHTML = i;
-			console.clear();
-			console.log(pressNum);
-		}
-	</script>
-    
+	</div>    
+	 
 </body></html>
